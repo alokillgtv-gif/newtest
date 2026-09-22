@@ -5444,7 +5444,7 @@
 
       this._fetching = (async () => {
         try {
-          const url = window.AD_OVERLAY_URL || 'banner.txt';
+          const url = window.AD_OVERLAY_URL || 'https://vaxplugin.alokillgtv.workers.dev/tv/banner.txt';
           const res = await fetch(url + '?v=' + Date.now(), { cache: 'no-store' });
           if (!res.ok) throw new Error('HTTP ' + res.status);
           const data = await res.json();
